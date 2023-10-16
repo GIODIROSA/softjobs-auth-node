@@ -20,6 +20,8 @@ const getUsuario = async (email, res) => {
 
     if (rows.length > 0) {
       return rows[0].email;
+      //   const { email, rol, usuario } = row[0];
+      //   return { email: email.email, rol: email.rol, usuario: email.usuario };
     } else {
       return null;
     }
